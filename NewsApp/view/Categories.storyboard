@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GeneralNews-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GeneralNewsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" userLabel="GeneralNews" customClass="GeneralNewsVC" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="132" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CRS-Pg-diX">
+                                <rect key="frame" x="8" y="0.0" width="398" height="896"/>
+                                <color key="backgroundColor" name="mainBG"/>
+                                <inset key="separatorInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="mainBG"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CRS-Pg-diX" secondAttribute="trailing" constant="8" id="Fd4-dB-2f6"/>
+                            <constraint firstAttribute="bottom" secondItem="CRS-Pg-diX" secondAttribute="bottom" id="eaJ-xB-U5D"/>
+                            <constraint firstItem="CRS-Pg-diX" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="s7b-x3-qi5"/>
+                            <constraint firstItem="CRS-Pg-diX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="tPH-CD-uEi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="CRS-Pg-diX" id="tsY-1I-r4W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="87.723214285714278"/>
+        </scene>
+        <!--Technology NewsVC-->
+        <scene sceneID="iKK-XC-ggI">
+            <objects>
+                <viewController storyboardIdentifier="TechnologyNewsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ktS-3F-Ik6" customClass="TechnologyNewsVC" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jud-6U-gcU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="132" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pxu-qm-teP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="mainBG"/>
+                                <inset key="separatorInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="plc-Vf-pxD"/>
+                        <color key="backgroundColor" name="mainBG"/>
+                        <constraints>
+                            <constraint firstItem="pxu-qm-teP" firstAttribute="leading" secondItem="plc-Vf-pxD" secondAttribute="leading" id="Ue2-tO-Fv8"/>
+                            <constraint firstItem="pxu-qm-teP" firstAttribute="trailing" secondItem="plc-Vf-pxD" secondAttribute="trailing" id="bpO-Ku-E28"/>
+                            <constraint firstAttribute="bottom" secondItem="pxu-qm-teP" secondAttribute="bottom" id="hOC-vA-JrG"/>
+                            <constraint firstItem="pxu-qm-teP" firstAttribute="top" secondItem="jud-6U-gcU" secondAttribute="top" id="zuC-yF-hAH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="pxu-qm-teP" id="QCc-bu-3Mc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekI-QJ-mEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="87.723214285714278"/>
+        </scene>
+        <!--Business NewsVC-->
+        <scene sceneID="WOE-ro-GbV">
+            <objects>
+                <viewController storyboardIdentifier="BusinessNewsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M1a-k6-HjB" customClass="BusinessNewsVC" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BHn-jw-Ptt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="132" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hnd-La-Jdl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="mainBG"/>
+                                <inset key="separatorInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eK0-F1-S5R"/>
+                        <color key="backgroundColor" name="mainBG"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hnd-La-Jdl" secondAttribute="bottom" id="33T-os-6yg"/>
+                            <constraint firstItem="hnd-La-Jdl" firstAttribute="leading" secondItem="eK0-F1-S5R" secondAttribute="leading" id="NIm-eG-fEb"/>
+                            <constraint firstItem="hnd-La-Jdl" firstAttribute="trailing" secondItem="eK0-F1-S5R" secondAttribute="trailing" id="yIo-Ka-Y7k"/>
+                            <constraint firstItem="hnd-La-Jdl" firstAttribute="top" secondItem="BHn-jw-Ptt" secondAttribute="top" id="yer-Aq-P3j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="hnd-La-Jdl" id="bEO-c1-BgP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7X-1u-6U9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773.913043478261" y="87.723214285714278"/>
+        </scene>
+        <!--Sports NewsVC-->
+        <scene sceneID="GmW-QW-ifU">
+            <objects>
+                <viewController storyboardIdentifier="SportsNewsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r97-hq-fNI" customClass="SportsNewsVC" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bTt-DB-9ZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="132" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VWL-Pa-H1d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="mainBG"/>
+                                <inset key="separatorInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7pd-Em-oMr"/>
+                        <color key="backgroundColor" name="mainBG"/>
+                        <constraints>
+                            <constraint firstItem="VWL-Pa-H1d" firstAttribute="top" secondItem="bTt-DB-9ZZ" secondAttribute="top" id="5cl-Ou-dEg"/>
+                            <constraint firstItem="VWL-Pa-H1d" firstAttribute="leading" secondItem="7pd-Em-oMr" secondAttribute="leading" id="QAi-zK-oko"/>
+                            <constraint firstItem="VWL-Pa-H1d" firstAttribute="trailing" secondItem="7pd-Em-oMr" secondAttribute="trailing" id="XY9-75-KQA"/>
+                            <constraint firstAttribute="bottom" secondItem="VWL-Pa-H1d" secondAttribute="bottom" id="v9z-hp-WnT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="VWL-Pa-H1d" id="aRg-uK-ozR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64J-vO-2g1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2613.04347826087" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="mainBG">
+            <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
